@@ -3,13 +3,13 @@
 //  Swift Essentials 1
 //
 //  Created by Aaron Ramirez on 6/12/22.
-//
+//  Creates the landmark object making sure it can be identifiable by the id codable and decodable with the .JSON
 
 import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var park: String
@@ -24,7 +24,7 @@ struct Landmark: Hashable, Codable {
     
     private var coordinates: Coordinates
     
-    var locateCoordinate: CLLocationCoordinate2D {
+    var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)

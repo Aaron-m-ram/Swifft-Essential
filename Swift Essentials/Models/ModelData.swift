@@ -3,7 +3,7 @@
 //  Swift Essentials 1
 //
 //  Created by Aaron Ramirez on 6/12/22.
-//
+//  The "api fetch" to try and load the local JSON. 
 
 import Foundation
 
